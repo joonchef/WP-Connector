@@ -189,10 +189,18 @@ def processAddCommaxDevice(data){
         	namespace = "streamorange58819"
         	dth = "Wallpad Commax Fan"
         }
-    }else if(rootDevice == "thermostat"){
+    }else if(rootDevice == "dimmer"){
+		if(commaxDevice == "light"){
+			namespace = "zipyo"
+        	dth = "Wallpad Commax Dimmer Light"
+        }
+	}else if(rootDevice == "thermostat"){
     	if(commaxDevice == "boiler"){
         	dth = "Wallpad Commax Boiler"
-        }
+        }else if(commaxDevice == "aircon"){
+			namespace = "zipyo"
+        	dth = "Wallpad Commax Air Conditioner"
+		}
     }else if(rootDevice == "detectSensors"){
     	if(commaxDevice == "contactSensor"){
         	dth = "Wallpad Commax Contact Sensor"
