@@ -197,9 +197,8 @@ def processAddCommaxDevice(data){
 	}else if(rootDevice == "thermostat"){
     	if(commaxDevice == "boiler"){
         	dth = "Wallpad Commax Boiler"
-        }else if(commaxDevice == "aircon"){
-			namespace = "zipyo"
-        	dth = "Wallpad Commax Air Conditioner"
+        }else if(commaxDevice == "aircon"){			
+        	dth = "LG Air Conditioner v2"
 		}
     }else if(rootDevice == "detectSensors"){
     	if(commaxDevice == "contactSensor"){
